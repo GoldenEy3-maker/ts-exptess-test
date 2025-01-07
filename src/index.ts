@@ -5,11 +5,11 @@ const port = process.env.PORT || 8080;
 
 app.use(express.static("public"));
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/api", (req: Request, res: Response) => {
   res.send("Express Typescript on Vercel");
 });
 
-app.get("/ping", (req: Request, res: Response) => {
+app.get("/api/ping", (req: Request, res: Response) => {
   res.send("pong 🏓");
 });
 
